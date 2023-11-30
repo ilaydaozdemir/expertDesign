@@ -54,6 +54,8 @@ body {
   letter-spacing: 35px;
   opacity: 0.6;
   color: white;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
 }
 .heading-primary-sub {
   display: block;
@@ -61,4 +63,15 @@ body {
   font-weight: 900px;
   letter-spacing: 18px;
   color: black;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
