@@ -43,12 +43,14 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .heading-primary {
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 40px;
 }
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 60px;
   font-weight: 400px;
@@ -57,8 +59,9 @@ body {
   color: white;
   animation-name: moveInLeft;
   animation-duration: 1s;
+  margin: 40px;
 }
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 20px;
   font-weight: 900px;
@@ -86,14 +89,35 @@ body {
 }
 @keyframes moveInRight {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(100px);
   }
   80% {
     transform: translateX(-10px);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: 100px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  background-color: white;
+  color: #777;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
