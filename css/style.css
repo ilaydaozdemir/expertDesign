@@ -7,18 +7,23 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
 }
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7px;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -32,11 +37,11 @@ body {
 }
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 .text-box {
   position: absolute;
@@ -48,24 +53,24 @@ body {
 .heading-primary {
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .heading-primary--main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400px;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   opacity: 0.6;
   color: white;
   animation-name: moveInLeft;
   animation-duration: 1s;
-  margin: 40px;
+  margin: 4rem;
 }
 .heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 900px;
-  letter-spacing: 18px;
+  letter-spacing: 1.8rem;
   color: black;
   animation-name: moveInRight;
   animation-duration: 1s;
@@ -115,11 +120,12 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 20px 40px;
+  padding: 2rem 4rem;
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
 .btn:hover {
   transform: translateY(-3px);
