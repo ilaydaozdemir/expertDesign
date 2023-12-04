@@ -1,6 +1,8 @@
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+
+$color-gray-dark: #777;
 *,
 *::before,
 *::after {
@@ -15,7 +17,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7px;
-  color: #777;
+  color: $color-gray-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -24,8 +26,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-light, 0.7),
-      rgba($color-primary-dark, 0.7)
+      rgba($color-primary-light, 0.4),
+      rgba($color-primary-dark, 0.6)
     ),
     url(../img/hero.jpg);
   background-size: cover;
@@ -135,7 +137,7 @@ body {
 }
 .btn-white {
   background-color: white;
-  color: #777;
+  color: $color-gray-dark;
 }
 .btn::after {
   content: "";
